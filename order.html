@@ -17,11 +17,15 @@
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix">
 
+        <body>
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
         <!-- Mobile Nav (max width 767px)-->
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
-                <a href="index.html"><img src="img/logo1.jpg" alt="logo"></a>
+                <a href="index.html"><img src="img/img/logo1.jpg" alt=""></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -37,9 +41,9 @@
             </div>
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="img/logo1.jpg" alt="logo"></a>
+                <a href="index.html"><img src="img/logo1.jpg" alt=""></a>
             </div>
-            <!-- Amado Nav -->
+            
             <nav class="amado-nav">
                 <ul>
                     <li class="active"><a href="index.html">Главная</a></li>
@@ -48,18 +52,15 @@
                     <li><a href="order.html">Корзина</a></li>
                     <li><a href="about.html">Контакты</a></li>
                 </ul>
-            </nav>
-            <br>
-            <br>
-            <!-- Social -->
+            </nav> <br> <br>
+            <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
                 <a href="https://www.instagram.com/chepcamebel" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a href="https://www.facebook.com/chepcamebel/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href="https://m.vk.com/club117603272" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
             </div>
-            
         </header>
-        
+        <!-- Header Area End -->    
 
         <div class="cart-table-area section-padding-100">
             <div class="container-fluid">
@@ -77,6 +78,7 @@
                                         <th>Цвет основания</th>
                                         <th>Цвет обивки</th>
                                         <th>Количество</th>
+                                        <th>Сумма</th> 
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -92,13 +94,16 @@
                                         </td>
                                         <td class="qty">
                                             <div class="qty-btn d-flex">
-                                                <p>Количество</p>
+                                                <p>Штук</p> 
                                                 <div class="quantity">
                                                     <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                                     <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="0">
                                                     <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                                </div>
+                                                </div> 
                                             </div>
+                                        </td>
+                                        <td class="qty">
+                                            <input type="text" size="40">
                                         </td>
                                     </tr>
                                     
@@ -119,7 +124,7 @@
                                 <a href="#" class="btn amado-btn w-100">Оплатить</a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
